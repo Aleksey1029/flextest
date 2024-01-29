@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Калькулятор</h1>
+    <form action="#">
+
+        <div>
+            <label>
+                Первое значение: <input type="number" name="x">
+            </label>          
+        </div>
+        <div>
+            <label>
+                Второе значение: <input type="number" name="y">
+            </label>          
+        </div> 
+        <div>
+            <label>
+                Результат = <input type="text" name="result_2" readonly>
+            </label>          
+        </div>
+        <div>
+            <label class="but">
+                <input type="button" class="but_2" name="Button" value="+" onclick="sloj()">
+            </label>          
+
+            <label class="but">
+                <input type="button" class="but_2" name="Button" value="-" onclick="vuch()">
+            </label>          
+        
+            <label class="but">
+                <input type="button" class="but_2" name="Button" value="*" onclick="umno()">
+            </label>          
+        
+            <label class="but">
+                <input type="button" class="but_2" name="Button" value="/" onclick="dele()">
+            </label>          
+    
+            <label class="but">
+                <input type="button" class="but_2" name="Button" value="**" onclick="dvoe()">
+            </label>          
+        </div>
+    </form>
+    <p class="error_form"></p>
+    <script src="./script.js"></script>
+</body>
+</html>
